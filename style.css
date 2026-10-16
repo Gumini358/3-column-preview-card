@@ -1,0 +1,169 @@
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    text-align: left;
+    align-items: stretch;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 500px;
+    width: 920px;
+    max-width: 100%;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    min-width: 0;
+    
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    min-width: 0;
+   
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.934);
+    padding: 40px;
+    flex: 1;
+    min-width: 0;
+    
+}
+ 
+.sedans-btn {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 145px;
+    margin-top: auto;
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.suvs-btn {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 145px;
+    margin-top: auto;
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.luxury-btn {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 145px;
+    margin-top: auto;
+    flex-direction: space-between;
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+   
+}
+.container p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+line-height: 1.7;
+
+}
+
+.sedans p {
+    color: hsla(0, 0%, 100%, 0.493);
+    margin-top: 0;
+    
+}
+.sedans h2 {
+    color: hsla(0, 0%, 100%, 0.812);
+    margin-top: 0;
+}
+
+.container img {
+    width: 64px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.sedans-btn,
+.suvs-btn,
+.luxury-btn {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sedans-btn {
+    color: hsl(31, 77%, 40%);
+}
+
+.suvs-btn {
+    color: hsl(184, 100%, 18%);
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 10%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+.sedans-btn,
+.suvs-btn,
+.luxury-btn {
+    margin-top: 50px;
+}
